@@ -1,0 +1,12 @@
+{
+  "name": "ar-validate",
+  "description": "Validate AI Roster project health — checks definitions, adapters, runtime, and pipeline configuration",
+  "version": "0.1.0",
+  "instructions": "Run `npx ai-roster-plugin-validate .` to validate the current AI Roster project. Report results with pass/fail for each check. Do not modify files.",
+  "tools": [
+    {
+      "type": "command",
+      "command": "npx ai-roster-plugin-validate ."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "ai-roster-plugin-validate",
+  "version": "0.1.0",
+  "description": "Validation plugin for AI Roster projects — checks definitions, adapters, runtime, and pipeline health",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "ar-validate": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "validate": "tsx src/cli.ts"
+  },
+  "keywords": [
+    "ai-roster",
+    "validation",
+    "plugin",
+    "claude-code",
+    "copilot"
+  ],
+  "author": "Eugene Van Betonio",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "ajv": "^8.17.0",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
